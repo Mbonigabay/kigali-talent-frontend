@@ -41,5 +41,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            mbonigabay/kigali-talent-fronted:latest
+            mbonigabay/kigali-talent-frontend:latest
             mbonigabay/kigali-talent-frontend:${{ github.event.release.tag_name }}
