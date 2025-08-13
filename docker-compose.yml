@@ -3,10 +3,8 @@ version: '3.8'
 services:
   # This service represents your React front-end.
   frontend:
-    # Use the pre-built image from Docker Hub instead of building locally.
     image: mbonigabay/kigali-talent-frontend
-    # The 'ports' instruction maps a port on your host machine to a
-    # port inside the container.
-    # We are mapping host port 3000 to the container's exposed port 80.
     ports:
       - "3000:80"
+    environment:
+      - VITE_BACKEND_API_BASE_URL=http://localhost:8000/api
