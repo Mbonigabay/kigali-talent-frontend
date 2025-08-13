@@ -44,9 +44,11 @@ Follow these steps to get a local copy of the project up and running.
 kigali-talent-frontend/  
 ├── public/                 \# Static assets  
 ├── src/  
-│   ├── components/         \# Reusable UI components (Navbar, Footer, Forms, Modals)  
+│   ├── components/         \# Reusable UI components (Navbar, Footer, Forms, Modals) 
+│   ├── layouts/            \# Reusable UI components (UserDashboard, AdminDashboard)  
 │   ├── features/           \# Redux slices for state management  
-│   ├── services/           \# API calls and business logic  
+│   ├── services/           \# API calls and business logic    
+│   ├── stateMachine/       \# Defines state machine 
 │   ├── store/              \# Redux store configuration  
 │   ├── styles/             \# Global CSS files  
 │   └── views/              \# Page-level components (Home, Jobs, Login, etc.)  
