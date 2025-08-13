@@ -19,7 +19,7 @@ RUN npm run build
 
 # Stage 2: Serve the application with a lightweight Nginx server
 # We use an official Nginx image as our base.
-FROM nginx:alpine
+FROM nginx:stable
 
 # Copy the built files from the 'builder' stage into Nginx's public directory.
 # The 'builder' stage's /app/dist folder contains our compiled static files.
